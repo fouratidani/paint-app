@@ -11,19 +11,25 @@ A Java Swing-based paint application that allows users to draw freely on a canva
 - ✅ Freehand drawing on canvas
 - ✅ RGB color selection using `JColorChooser`
 - ✅ Clear canvas functionality
-- ✅ Optional undo/redo support
 - ✅ Organized code with OOP principles
 
 ---
 
-## 🧩 Project Structure
+---
 
-.
-├── DrawArea.java # Drawing canvas component
-├── LoginGUI.java # Login interface
-├── SignupGUI.java # Signup interface
-├── LoginDAO.java # Handles login database logic
-├── SignupDAO.java # Handles signup database logic
-├── Singleton.java # Singleton DB connection class
-├── PaintGUI.java # Paint interface after login
-└── README.md # Project documentation
+## ⚙️ Setup Instructions
+
+### 1. Clone the Repository
+
+```bash
+git clone https://github.com/yourusername/java-paint-app.git
+cd java-paint-app
+CREATE DATABASE paint_app;
+USE paint_app;
+
+```bash
+CREATE TABLE user (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  username VARCHAR(255) NOT NULL UNIQUE,
+  password VARCHAR(255) NOT NULL
+);
