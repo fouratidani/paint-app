@@ -15,8 +15,15 @@ A Java Swing-based paint application that allows users to draw freely on a canva
 
 ---
 
+## Technologies
+- **Java** — Core programming language
+- **Swing (JFC)** — For GUI components
+- **JDBC (Java Database Connectivity)** — To interact with MySQL
+- **MySQL** — Relational database for user authentication
+- **Graphics2D** — For drawing on the canvas
+- **Intellij Idea** — Primary IDE for development  
+- **Git** — Version control
 ---
-
 ## Setup Instructions
 
 ### 1. Clone the Repository
@@ -27,6 +34,7 @@ cd java-paint-app
 CREATE DATABASE paint_app;
 USE paint_app;
 ```
+### 2. MySQL Setup
 ```bash
 CREATE TABLE user (
   id INT AUTO_INCREMENT PRIMARY KEY,
@@ -34,7 +42,7 @@ CREATE TABLE user (
   password VARCHAR(255) NOT NULL
 );
 ```
-3. Update Your Database Credentials
+### 3. Update Your Database Credentials
 ```bash
 connection = DriverManager.getConnection(
   "jdbc:mysql://localhost:3306/paint_app", "root", "your_password"
